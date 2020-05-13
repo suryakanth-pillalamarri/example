@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+          <head>
+                  <title>Web page</title>
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+                  <meta name="viewport" content="width=device-width",initial-scale=1.0>
+                  <style media="screen">
+
+                        p{
+                          color:green;
+                          text-align:center;
+
+                        }
+                        #b{
+                          color:blue;
+                          padding-left:"20px";
+                        }
+                        #topleft {
+                          background-color:teal;
+                          padding:"50px";
+                        }
+                        #topright{
+                          background-color:white;
+                          padding:"50px";
+                        }
+                        #bottomleft{
+                          background-color:black;
+                        }
+                        #bottomright{
+                          background-color:cyan;
+                        }
+                        #link{
+                          align:center;
+                          text-color:green;
+                        }
+                  </style>
+                  <link rel="stylesheet" href="style.css">
+          </head>
+          <body>
+                <div id="boxes">
+                      <h1 style="color:green;text-align:center;"><b><em>{{head_line}}</em></b></h1>
+                      <div border="50px">
+                              <div id="topleft" align="right">
+
+                                    <b><em>Hare krishna! below is a video about krishna his home is vrundavan and available every whare.</em></<b>
+                                    <br>
+                                    <b><em>Below is song of krishna</em></b>
+                                    <br><br>
+
+                              </div>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/7Y5ZxWJqS68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <h1><b id="b">krishna image:</b></h1>
+                              <div id="topright" align="right">
+                                    <img src="/static/krishnaone.png" alt="This is image of lord krishna!" width="50%">
+                              </div>
+
+                    </div>
+
+                    <div border="50px">
+                          <div id="bottomleft">
+                                <h1 align="center">Image showing twenty four forms of lord vishnu</h1>
+                                <img src="/static/24formsofkrishna.jpg" alt="This is image of lord krishna!" width="50%">
+
+                              <form align="right">
+                                    <input type="text" placeholder="Full name" value="Enter you your name to message krishna">
+                                    <button type="button" name="button">Submit</button>
+                              </form>
+                        </div>
+                        <div  id="bottomright" align="right">
+                            <h2>ABOUT KRISHNA</h2>
+                            <p align="right">This is a simple para graph about lord krishna.<br>
+                              He is vasudeva,he is every whare in the universe and universe is inside krishna.<br>
+                              He is lord who uplifted the govardhana giri to save his people from terrible strom
+                            </p>
+                        </div>
+                      </div>
+              </div>
+
+            <p align="center"><a href="{{ url_for('rama') }}" id="link">click here! to hear song of lord rama!</a></p>
+          </body>
+</html>
