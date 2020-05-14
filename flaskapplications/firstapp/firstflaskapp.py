@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request
 
 app=Flask(__name__)
 
@@ -24,3 +24,13 @@ def rama():
 @app.route("/avathar")
 def avathar():
     return render_template("avathar.html")
+    
+
+@app.route("/varadha",methods=["post","GET"])
+def varadha():
+    if request.method== "GET":
+        return "Please submit the name instead"
+    else:
+        name=request.form.get("name")
+        return render_template("varadha.html")
+
